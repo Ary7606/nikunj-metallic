@@ -1,254 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Nikunj Metallic - Aluminium Solutions</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nikunj Metals - Aluminium Trading</title>
+
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Inter',sans-serif;
-}
-body{
-background:#0b1220;
-color:#fff;
-overflow-x:hidden;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
-/* NAVBAR */
-.navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 60px;
-background:rgba(10,15,30,0.8);
-backdrop-filter:blur(10px);
-position:fixed;
-width:100%;
-top:0;
-z-index:1000;
+body {
+  background: #0f172a;
+  color: white;
 }
-.logo{
-font-size:22px;
-font-weight:800;
-color:#f5c542;
+
+/* NAV */
+nav {
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,0.8);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
 }
-.nav-links a{
-color:#fff;
-margin:0 15px;
-text-decoration:none;
-font-weight:500;
-opacity:0.8;
-}
-.nav-links a:hover{
-opacity:1;
-}
-.btn{
-background:#f5c542;
-color:#000;
-padding:10px 18px;
-border-radius:8px;
-font-weight:600;
-text-decoration:none;
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
 /* HERO */
-.hero{
-height:100vh;
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:0 60px;
-background:radial-gradient(circle at top, #1b2a4a, #0b1220);
-}
-.hero-text{
-max-width:600px;
-}
-.hero-text h1{
-font-size:52px;
-line-height:1.1;
-}
-.hero-text span{
-color:#f5c542;
-}
-.hero-text p{
-margin-top:15px;
-opacity:0.8;
-line-height:1.6;
-}
-.hero-img img{
-width:520px;
-border-radius:15px;
-box-shadow:0 20px 60px rgba(0,0,0,0.5);
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
 }
 
-/* STATS */
-.stats{
-display:flex;
-gap:40px;
-margin-top:30px;
+.hero h1 {
+  font-size: 50px;
 }
-.stat-box h3{
-color:#f5c542;
-font-size:22px;
+
+.hero p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #cbd5e1;
 }
-.stat-box p{
-font-size:13px;
-opacity:0.7;
+
+/* SECTIONS */
+section {
+  padding: 80px 20px;
 }
 
 /* PRODUCTS */
-.section{
-padding:80px 60px;
-}
-.section h2{
-font-size:32px;
-margin-bottom:30px;
-}
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-}
-.card{
-background:#121a2b;
-border-radius:12px;
-overflow:hidden;
-transition:0.3s;
-}
-.card:hover{
-transform:translateY(-8px);
-}
-.card img{
-width:100%;
-height:160px;
-object-fit:cover;
-}
-.card-content{
-padding:15px;
-}
-.card-content h3{
-color:#f5c542;
-margin-bottom:8px;
-}
-.card-content p{
-font-size:13px;
-opacity:0.8;
-line-height:1.4;
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-/* BACKGROUND EFFECTS */
-.glow{
-position:absolute;
-width:400px;
-height:400px;
-background:#f5c542;
-filter:blur(150px);
-opacity:0.15;
-border-radius:50%;
-top:10%;
-left:-100px;
+.product {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 12px;
 }
-.glow2{
-position:absolute;
-width:400px;
-height:400px;
-background:#4da3ff;
-filter:blur(160px);
-opacity:0.12;
-bottom:10%;
-right:-100px;
-border-radius:50%;
+
+.product img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background: #38bdf8;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* ABOUT */
+.about {
+  background: #111827;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* CONTACT */
+.contact-box {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* MAP */
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
 }
 </style>
 </head>
+
 <body>
 
-<div class="glow"></div>
-<div class="glow2"></div>
-
-<!-- NAVBAR -->
-<div class="navbar">
-<div class="logo">NIKUNJ METALLIC</div>
-<div class="nav-links">
-<a href="#">Home</a>
-<a href="#">Products</a>
-<a href="#">About</a>
-<a href="#">Contact</a>
-</div>
-<a class="btn" href="#">Get Quote</a>
-</div>
+<!-- NAV -->
+<nav>
+  <div><b>Nikunj Metals</b></div>
+  <div>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
 <!-- HERO -->
 <div class="hero">
-<div class="hero-text">
-<h1>Premium <span>Aluminium</span> Products & Solutions</h1>
-<p>We provide high-quality aluminium sheets, rods, pipes and industrial solutions for construction, manufacturing and infrastructure projects.</p>
-
-<div class="stats">
-<div class="stat-box">
-<h3>10+</h3>
-<p>Years Experience</p>
-</div>
-<div class="stat-box">
-<h3>500+</h3>
-<p>Clients</p>
-</div>
-<div class="stat-box">
-<h3>1000+</h3>
-<p>Projects</p>
-</div>
-</div>
-</div>
-
-<div class="hero-img">
-<img src="https://images.unsplash.com/photo-1581092334490-3b6d1f7f1a7a?auto=format&fit=crop&w=800&q=80" />
-</div>
+  <h1>Aluminium Trading Company</h1>
+  <p>Ingots • Shots • Powder • Wire • Notch Bars</p>
 </div>
 
 <!-- PRODUCTS -->
-<div class="section">
-<h2>Our Aluminium Products</h2>
+<section id="products">
+  <h2>Our Products</h2>
+  <br>
 
-<div class="products">
+  <div class="products">
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1615486364462-ef6363f4a3c6?auto=format&fit=crop&w=800&q=80" />
-<div class="card-content">
-<h3>Aluminium Sheets</h3>
-<p>High strength sheets used in construction and industrial applications.</p>
-</div>
-</div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7">
+      <h3>Aluminium Ingots</h3>
+      <p>High purity aluminium ingots for industrial use.</p>
+      <button onclick="getQuote('Aluminium Ingots')">Get Quote</button>
+    </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=800&q=80" />
-<div class="card-content">
-<h3>Aluminium Pipes</h3>
-<p>Durable pipes for fluid transport and structural use.</p>
-</div>
-</div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0">
+      <h3>Aluminium Shots</h3>
+      <p>Precision aluminium shots for casting and alloying.</p>
+      <button onclick="getQuote('Aluminium Shots')">Get Quote</button>
+    </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1603732551658-5fabbafa1c3a?auto=format&fit=crop&w=800&q=80" />
-<div class="card-content">
-<h3>Aluminium Rods</h3>
-<p>Precision rods used in engineering and manufacturing.</p>
-</div>
-</div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1597002973393-2b6c7c2f7a7d">
+      <h3>Aluminium Powder</h3>
+      <p>Fine aluminium powder for chemical and industrial applications.</p>
+      <button onclick="getQuote('Aluminium Powder')">Get Quote</button>
+    </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1586864387789-628af9feed72?auto=format&fit=crop&w=800&q=80" />
-<div class="card-content">
-<h3>Aluminium Profiles</h3>
-<p>Custom profiles for windows, frames and structures.</p>
-</div>
-</div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1581090700227-1e8b2f3c9a60">
+      <h3>Aluminium Wire</h3>
+      <p>Durable aluminium wire for electrical and manufacturing use.</p>
+      <button onclick="getQuote('Aluminium Wire')">Get Quote</button>
+    </div>
 
-</div>
-</div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba2">
+      <h3>Notch Bars</h3>
+      <p>Strong notch bars used in machining and fabrication industries.</p>
+      <button onclick="getQuote('Notch Bars')">Get Quote</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Us</h2>
+  <br>
+  <div class="about">
+    <p>
+      Nikunj Metals is a trusted supplier of high-quality aluminium products including ingots, shots, powder, wire, and notch bars.
+      We focus on delivering premium-grade materials for industrial, manufacturing, and engineering applications.
+      <br><br>
+      With a strong supply chain and commitment to quality, we ensure timely delivery and customer satisfaction.
+      Our mission is to provide reliable aluminium solutions at competitive prices.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <br>
+
+  <div class="contact-box">
+    <p><b>Phone:</b> 9329101184 / 9111811184</p>
+    <p><b>WhatsApp:</b> 9329101184</p>
+    <p><b>Email:</b> nikunjmetal@gmail.com</p>
+
+    <br>
+
+    <button onclick="openWhatsApp('General Enquiry')">
+      Send WhatsApp Message
+    </button>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section>
+  <h2>Our Location</h2>
+  <br>
+
+  <iframe
+  src="https://www.google.com/maps?q=21.298778,81.634250&output=embed">
+  </iframe>
+</section>
+
+<footer>
+  © 2026 Nikunj Metals | Aluminium Trading Company
+</footer>
+
+<script>
+const phone = "919329101184";
+
+function getQuote(productName) {
+  let msg = `Hi, I want a quote for: ${productName}`;
+  let url = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
+  window.open(url, "_blank");
+}
+
+function openWhatsApp(type) {
+  let msg = `Hello, I have an enquiry regarding: ${type}`;
+  let url = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
+  window.open(url, "_blank");
+}
+</script>
 
 </body>
 </html>
